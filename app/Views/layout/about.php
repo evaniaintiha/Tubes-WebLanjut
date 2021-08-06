@@ -4,15 +4,13 @@
 <!-- About Me Box -->
 	<div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">About Us</h3>
+            <h3 class="card-title">About Me</h3>
         </div>
             <!-- /.card-header -->
     <div class="card-body">
         <strong><i class="fa fa-user fa-stack-1"></i> NAMA</strong>
    	    <p class="text-muted">
                   <span class="tag tag-danger">Evania Intiha</br><span>
-                  <span class="tag tag-success">Azzah Roudhoh</br></span>
-                  <span class="tag tag-info">Agnes Pramudani</span>
                 </p>
 
                 <hr>
@@ -20,8 +18,20 @@
    	    <strong><i class="fas fa-pencil-alt mr-1"></i> NPM</strong>
         <p class="text-muted">
                   <span class="tag tag-danger">1817051044</br><span>
-                  <span class="tag tag-success">1857051001</br></span>
-                  <span class="tag tag-info">1857051004</span>
+                </p>
+
+                <hr>
+
+        <strong><i class="fas fa-phone-alt mr-1"></i> PHONE</strong>
+        <p class="text-muted">
+                  <span class="tag tag-danger">085156458645</br><span>
+                </p>
+
+                <hr>
+
+        <strong><i class="fab fa-whatsapp mr-1"></i> WHATSAPP</strong>
+        <p class="text-muted">
+                  <span class="tag tag-danger"><a href="https://wa.me/6289531388793">089531388793</a></br><span>
                 </p>
 
                 <hr>

@@ -79,20 +79,663 @@ class Validation
 		],
 	];
 
-	public $fiksi = [
-		'judul' => [
-			'rules' => 'required|min_length[3]',
+	public $tanah = [
+		'ruang' => [
+			'rules' => 'required|min_length[1]',
 		],
-		'stok' => [
+		'tahun' => [
 			'rules' => 'required|is_natural',
 		],
-		'gambar' => [
-			'rules' => 'uploaded[gambar]',
-		],
-		'pengarang' => [
+		'merk' => [
 			'rules' => 'required|min_length[3]',
 		],
-		'penerbit' => [
+		'kode' => [
+			'rules' => 'required|min_length[18]',
+			'rules' => 'required|max_length[18]',
+		],
+
+			];
+
+	public $tanah_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 1 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kode' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 18 karakter',
+			'max_length' => '{field} Minimum 18 karakter',
+		],
+
+	];
+
+	public $tanahupdate = [
+		'ruang' => [
+			'rules' => 'required|min_length[1]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'status' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'catatan' => [
+			'rules' => 'required|min_length[3]',
+		],
+	];
+
+	public $tanahupdate_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 1 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'status' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'catatan' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+	];
+
+	public $alatbesar = [
+		'ruang' => [
+			'rules' => 'required|min_length[1]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'kode' => [
+			'rules' => 'required|min_length[3]',
+		],
+
+			];
+
+	public $alatbesar_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 1 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kode' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+
+	];
+
+	public $alatbesarupdate = [
+		'ruang' => [
+			'rules' => 'required|min_length[1]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'status' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'catatan' => [
+			'rules' => 'required|min_length[3]',
+		],
+	];
+
+	public $alatbesarupdate_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'status' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'catatan' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+	];
+	
+		public $alatangkutan = [
+		'ruang' => [
+			'rules' => 'required|min_length[1]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'kode' => [
+			'rules' => 'required|min_length[18]',
+			'rules' => 'required|max_length[18]',
+
+		],
+
+			];
+
+	public $alatangkutan_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 1 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kode' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+			'max_length' => '{field} Maximum 18 karakter',
+		],
+
+	];
+
+	public $alatangkutanupdate = [
+		'ruang' => [
+			'rules' => 'required|min_length[1]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'status' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'catatan' => [
+			'rules' => 'required|min_length[3]',
+		],
+	];
+
+	public $alatangkutanupdate_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 1 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'status' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'catatan' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+	];
+
+	public $alatbengkelukur = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'kode' => [
+			'rules' => 'required|min_length[3]',
+			'rules' => 'required|max_length[18]',
+		],
+
+			];
+
+	public $alatbengkelukur_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kode' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+			'max_length' => '{field} Maximum 18 karakter',
+		],
+
+	];
+
+	public $alatbengkelukurupdate = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'status' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'catatan' => [
+			'rules' => 'required|min_length[3]',
+		],
+	];
+
+	public $alatbengkelukurupdate_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'status' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'catatan' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+	];
+
+	public $alatpertanian = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'kode' => [
+			'rules' => 'required|min_length[3]',
+			'rules' => 'required|max_length[18]',
+		],
+
+			];
+
+	public $alatpertanian_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kode' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+			'rules' => 'required|max_length[18]',
+		],
+
+	];
+
+	public $alatpertanianupdate = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'status' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'catatan' => [
+			'rules' => 'required|min_length[3]',
+
+		],
+	];
+
+	public $alatpertanianupdate_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'status' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'catatan' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+	];
+
+		public $alatkantor = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'kode' => [
+			'rules' => 'required|min_length[3]',
+			'rules' => 'required|max_length[18]',
+		],
+
+			];
+
+	public $alatkantor_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kode' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+			'max_length' => '{field} Maximum 18 karakter',
+		],
+
+	];
+
+	public $alatkantorupdate = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'status' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'catatan' => [
+			'rules' => 'required|min_length[3]',
+		],
+	];
+
+	public $alatkantorupdate_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'status' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'catatan' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+	];
+
+		public $alatstudio = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'kode' => [
+			'rules' => 'required|min_length[3]',
+			'rules' => 'required|max_length[18]',
+		],
+
+			];
+
+	public $alatstudio_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kode' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+			'max_length' => '{field} Maximum 18 karakter',
+		],
+
+	];
+
+	public $alatstudioupdate = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'status' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'catatan' => [
+			'rules' => 'required|min_length[3]',
+		],
+	];
+
+	public $alatstudioupdate_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'status' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'catatan' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+	];
+
+		public $komputer = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'kode' => [
+			'rules' => 'required|min_length[3]',
+			'rules' => 'required|max_length[18]',
+		],
+
+
+			];
+
+	public $komputer_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kode' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+			'max_length' => '{field} Maximum 18 karakter',
+		],
+
+	];
+
+	public $komputerupdate = [
+		'ruang' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'tahun' => [
+			'rules' => 'required|is_natural',
+		],
+		'merk' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'status' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'catatan' => [
+			'rules' => 'required|min_length[3]',
+		],
+	];
+
+	public $komputerupdate_errors = [
+		'ruang' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'tahun' => [
+			'required' => '{field} Harus diisi',
+			'is_natural' => '{field} Tidak Boleh Negatif',
+		],
+		'merk' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'status' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'catatan' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+	];
+
+			public $kategori = [
+		'sub' => [
+			'rules' => 'required|min_length[3]',
+		],
+		'kategori' => [
+			'rules' => 'required|min_length[3]',
+		],
+
+			];
+
+	public $kategori_errors = [
+		'sub' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+		'kategori' => [
+			'required' => '{field} Harus diisi',
+			'min_length' => '{field} Minimum 3 karakter',
+		],
+
+	];
+
+	public $kategoriupdate = [
+		'sub' => [
 			'rules' => 'required|min_length[3]',
 		],
 		'kategori' => [
@@ -100,23 +743,8 @@ class Validation
 		],
 	];
 
-	public $fiksi_errors = [
-		'judul' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'stok' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'gambar' => [
-			'uploaded' => '{field} Harus di upload',
-		],
-		'pengarang' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'penerbit' => [
+	public $kategoriupdate_errors = [
+		'sub' => [
 			'required' => '{field} Harus diisi',
 			'min_length' => '{field} Minimum 3 karakter',
 		],
@@ -126,427 +754,25 @@ class Validation
 		],
 	];
 
-	public $fiksiupdate = [
-		'judul' => [
+	public $user = [
+		'username' => [
 			'rules' => 'required|min_length[3]',
 		],
-		'stok' => [
-			'rules' => 'required|is_natural',
-		],
-		'pengarang' => [
+		'password' => [
 			'rules' => 'required|min_length[3]',
 		],
-		'penerbit' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'kategori' => [
-			'rules' => 'required|min_length[3]',
-		],
-	];
 
-	public $fiksiupdate_errors = [
-		'judul' => [
+			];
+
+	public $user_errors = [
+		'username' => [
 			'required' => '{field} Harus diisi',
 			'min_length' => '{field} Minimum 3 karakter',
 		],
-		'harga' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'stok' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'pengarang' => [
+		'password' => [
 			'required' => '{field} Harus diisi',
 			'min_length' => '{field} Minimum 3 karakter',
 		],
-		'penerbit' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'kategori' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-	];
 
-	public $edukasi = [
-		'judul' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'stok' => [
-			'rules' => 'required|is_natural',
-		],
-		'gambar' => [
-			'rules' => 'uploaded[gambar]',
-		],
-		'pengarang' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'penerbit' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'kategori' => [
-			'rules' => 'required|min_length[3]',
-		],
-	];
-
-	public $edukasi_errors = [
-		'judul' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'stok' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'gambar' => [
-			'uploaded' => '{field} Harus di upload',
-		],
-		'pengarang' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'penerbit' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'kategori' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-	];
-
-	public $edukasiupdate = [
-		'judul' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'stok' => [
-			'rules' => 'required|is_natural',
-		],
-		'pengarang' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'penerbit' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'kategori' => [
-			'rules' => 'required|min_length[3]',
-		],
-	];
-
-	public $edukasiupdate_errors = [
-		'judul' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'harga' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'stok' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'pengarang' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'penerbit' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'kategori' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-	];
-
-	public $biografi = [
-		'judul' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'stok' => [
-			'rules' => 'required|is_natural',
-		],
-		'gambar' => [
-			'rules' => 'uploaded[gambar]',
-		],
-		'pengarang' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'penerbit' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'kategori' => [
-			'rules' => 'required|min_length[3]',
-		],
-	];
-
-	public $biografi_errors = [
-		'judul' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'stok' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'gambar' => [
-			'uploaded' => '{field} Harus di upload',
-		],
-		'pengarang' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'penerbit' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'kategori' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-	];
-
-	public $biografiupdate = [
-		'judul' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'stok' => [
-			'rules' => 'required|is_natural',
-		],
-		'pengarang' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'penerbit' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'kategori' => [
-			'rules' => 'required|min_length[3]',
-		],
-	];
-
-	public $biografiupdate_errors = [
-		'judul' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'harga' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'stok' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'pengarang' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'penerbit' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'kategori' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-	];
-
-	public $transaksibio = [
-		'id_biografi' => [
-			'rules' => 'required',
-		],
-		'id_peminjam' => [
-			'rules' => 'required',
-		],
-		'jumlah'=> [
-			'rules' => 'required',
-		],
-	];
-
-	public $transaksiedu = [
-		'id_edukasi' => [
-			'rules' => 'required',
-		],
-		'id_peminjam' => [
-			'rules' => 'required',
-		],
-		'jumlah'=> [
-			'rules' => 'required',
-		],
-	];
-
-	public $transaksifik = [
-		'id_fiksi' => [
-			'rules' => 'required',
-		],
-		'id_peminjam' => [
-			'rules' => 'required',
-		],
-		'jumlah'=> [
-			'rules' => 'required',
-		],
-	];
-
-	public $transaksibioupdate = [
-		'jumlah' => [
-			'rules' => 'required|is_natural',
-		],
-		'denda' => [
-			'rules' => 'required|is_natural',
-		],
-		'dl_pengembalian' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'status' => [
-			'rules' => 'required|is_natural',
-		],
-		
-	];
-
-	public $transaksibioupdate_errors = [
-		
-		'jumlah' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
-		'denda' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'dl_pengembalian' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'status' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
-	];
-
-	public $transaksieduupdate = [
-		'jumlah' => [
-			'rules' => 'required|is_natural',
-		],
-		'denda' => [
-			'rules' => 'required|is_natural',
-		],
-		'dl_pengembalian' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'status' => [
-			'rules' => 'required|is_natural',
-		],
-		
-	];
-
-	public $transaksieduupdate_errors = [
-		
-		'jumlah' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
-		'denda' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'dl_pengembalian' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'status' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
-	];
-
-	public $transaksifikupdate = [
-		'jumlah' => [
-			'rules' => 'required|is_natural',
-		],
-		'denda' => [
-			'rules' => 'required|is_natural',
-		],
-		'dl_pengembalian' => [
-			'rules' => 'required|min_length[3]',
-		],
-		'status' => [
-			'rules' => 'required|is_natural',
-		],
-		
-	];
-
-	public $transaksifikupdate_errors = [
-		
-		'jumlah' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
-		'denda' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		'dl_pengembalian' => [
-			'required' => '{field} Harus diisi',
-			'min_length' => '{field} Minimum 3 karakter',
-		],
-		'status' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
-	];
-
-	public $pengembalianbioupdate = [
-		'status' => [
-			'rules' => 'required|is_natural',
-		],
-		
-	];
-
-	public $pengembalianbioupdate_errors = [
-		'status' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
-	];
-
-	public $pengembalianeduupdate = [
-		'status' => [
-			'rules' => 'required|is_natural',
-		],
-		
-	];
-
-	public $pengembalianeduupdate_errors = [
-		'status' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
-	];
-
-	public $pengembalianfikupdate = [
-		'status' => [
-			'rules' => 'required|is_natural',
-		],
-		
-	];
-
-	public $pengembalianfikupdate_errors = [
-		'status' => [
-			'required' => '{field} Harus diisi',
-			'is_natural' => '{field} Tidak Boleh Negatif',
-		],
-		
 	];
 }

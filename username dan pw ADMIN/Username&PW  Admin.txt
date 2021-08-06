@@ -1,3 +1,0 @@
-Untuk login ke mode Admin dapat menggunakan username dan password dibawah ini
-Username : admin
-Pasword : 123456

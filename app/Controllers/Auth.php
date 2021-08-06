@@ -19,6 +19,7 @@ class Auth extends BaseController
             
             if($errors)
             {
+                $this->session->setFlashdata('errors', $errors);
                 return view('login');
             }
 
@@ -54,7 +55,7 @@ class Auth extends BaseController
 	}
     
     public function register()
-	{
+    {
         if($this->request->getPost())
         {
             $data = $this->request->getPost();
@@ -79,8 +80,8 @@ class Auth extends BaseController
             $this->session->setFlashdata('errors', $errors);
 
         }
-		return view('register');
-	}
+        return view('register');
+    }
 
     
     public function logout()

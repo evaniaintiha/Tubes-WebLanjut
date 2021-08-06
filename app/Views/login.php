@@ -42,7 +42,7 @@
             <?= form_label("Username", "username")?>
             <div class="input-group-append">
                 <?= form_input($username)?>
-            <div class="input-group-text">
+            <div class="input-group-text" >
               <span class="fas fa-user"></span>
             </div>
           </div> 
@@ -57,9 +57,6 @@
           </div>
         </div>
         <div class = "row">
-            <div class ="col mt-3 text-left">
-                <a href="<?= site_url('auth/register') ?>">You need an account? Sign Up</a>
-            </div>
             <div class="col mt-3 text-right">
                 <?= form_submit('submit', 'Sign In',['class'=>'btn btn-primary']) ?>
             </div>
